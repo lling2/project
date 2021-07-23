@@ -1,0 +1,91 @@
+.page-interview {
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .exper-swiper {
+    position: relative;
+    & .swiper-container {
+      padding-bottom: 30px;
+      margin-top: 40px;
+      & .swiper-pagination-bullets {
+        bottom: 0px;
+        & .swiper-pagination-bullet {
+          background: var(--fColor);
+          opacity: 1;
+          width: 10px;
+          height: 10px;
+          margin: 0 10px;
+        }
+        & .swiper-pagination-bullet-active {
+          background: var(--actFColor);
+        }
+      }
+      & .swiper-slide {
+        width: 300px;
+        height: 400px;
+      }
+    }
+    & .swiper-item-box {
+      width: 300px;
+      height: 400px;
+      background: var(--infoBgWite);
+      box-sizing: border-box;
+      position: relative;
+      border-radius: var(--borderRadius_2);
+      overflow: hidden;
+      box-shadow: 0 8px 30px var(--shadowBlackColor);
+      cursor: pointer;
+      & .item-top {
+        height: 160px;
+        overflow: hidden;
+        text-align: center;
+        & img {
+          height: 100%;
+        }
+      }
+      & .user-avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 3;
+      }
+      & .item-content {
+        margin-top: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        & .con-til {
+          color: var(--fBlack);
+          font-weight: bold;
+        }
+        & .user-info {
+          font-weight: bold;
+          margin-top: -8px;
+          /* margin-bottom: 20px; */
+        }
+        & .con-subject {
+          color: var(--infoFColor);
+          line-height: 1.5;
+          height: 80px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+/* @media (width>1200px) {
+  .gallery-box {
+    transform: scale(1.1);
+  }
+} */

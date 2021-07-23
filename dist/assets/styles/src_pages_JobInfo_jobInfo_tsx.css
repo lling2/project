@@ -1,0 +1,49 @@
+.job-info {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: scroll;
+  margin-top:10px;
+  scrollbar-color: linear-gradient(to bottom, #ff8a00, #da1b60);
+  scrollbar-width: 30px;
+  /* background: #100e17;
+  color: #fff; */
+  overflow-x: hidden
+}
+.job-info::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+.job-info::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff8a00, #da1b60);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    /* box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25); */
+  }
+.job-info::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to right,
+      #201c29,
+      #201c29 1px,
+      #100e17 1px,
+      #100e17
+    );
+  }
+.job-info .job-con-box {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: var(--borderRadius_2) solid var(--borderColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px
+  }
+.job-info .job-con-box .job-item p {
+        color: var(--infoFColor);
+      }
+
+
+/*# sourceMappingURL=src_pages_JobInfo_jobInfo_tsx.css.map*/
