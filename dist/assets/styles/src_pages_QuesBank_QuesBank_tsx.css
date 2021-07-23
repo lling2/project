@@ -1,0 +1,161 @@
+.page-ques {
+  height: 86%;
+  overflow: scroll;
+  scrollbar-color: linear-gradient(to bottom, #ff8a00, #da1b60);
+  scrollbar-width: 30px;
+  overflow-x: hidden
+}
+.page-ques::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+.page-ques::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff8a00, #da1b60);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  }
+.page-ques::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to right,
+      #201c29,
+      #201c29 1px,
+      #100e17 1px,
+      #100e17
+    );
+  }
+.page-ques {
+  position: relative
+}
+.page-ques .ques-bank {
+    box-sizing: border-box
+    /* margin-bottom: 130px; */
+  }
+.page-ques .ques-bank .ques-item {
+      margin: 10px auto;
+      box-sizing: border-box;
+      padding: 6px 12px;
+      border-radius: var(--borderRadius_8);
+      background-color: #151718;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 0 20px var(--shadowBlackColor);
+      transform: traslateX(0)
+    }
+.page-ques .ques-bank .ques-item .item-icon {
+        display: flex
+      }
+.page-ques .ques-bank .ques-item .item-icon > i {
+          width: 10px;
+          height: 10px;
+          background-color: #ffbd2e;
+          position: relative;
+          border-radius: 50%;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+.page-ques .ques-bank .ques-item .ques-con .item-til {
+          font-weight: bolder;
+          color: var(--fColor);
+          font-size: var(--fSizeMid);
+        }
+.page-ques .ques-bank .ques-item .ques-con .item-subject {
+        }
+.page-ques .ques-bank .ques-item .ques-con .markdown-box {
+          display: block;
+          background-color: transparent
+        }
+.page-ques .ques-bank .ques-item .ques-con .markdown-box .content {
+            box-shadow: none;
+            padding: 0
+          }
+.page-ques .ques-bank .ques-item .ques-con .markdown-box .content pre {
+              background: rgba(0, 0, 0, 0.16) !important;
+            }
+.page-ques .ques-bank .ques-item:hover {
+        transform: scale(1.01);
+      }
+
+.pagination {
+  width: 100%;
+  height: 40px;
+  padding-bottom: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 10px;
+  right: 5%;
+  left: 0;
+  z-index: 2;
+  overflow: hidden
+}
+.pagination .page-btn {
+    background: var(--actBgColor);
+    padding: 4px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s
+  }
+.pagination .page-btn.disable {
+      color: var(--disableFcolor);
+    }
+.pagination .page-btn:active {
+      transform: scale(0.9);
+    }
+.pagination .page-numbers {
+    cursor: pointer;
+    display: flex;
+    margin: 0 10px;
+    font-size: var(--fSizeMid)
+  }
+.pagination .page-numbers .page-num {
+      padding: 8px;
+      transition: all 0.2s;
+      color: var(--infoFColor)
+    }
+.pagination .page-numbers .page-num:active {
+        transform: scale(0.9);
+      }
+.pagination .page-numbers .page-num.act {
+        color: var(--actFColor);
+      }
+
+.sort-nav-box {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  text-shadow: 1px 1px 2px var(--fColor);
+  font-size: 16px;
+  margin: 14px 0
+}
+.sort-nav-box > li {
+    cursor: pointer;
+    margin-right: 12px;
+    transition: all 0.2s;
+    position: relative
+  }
+.sort-nav-box > li:hover {
+      transform: scale(1.1);
+    }
+.sort-nav-box > li.item-act {
+      color: var(--actFColor);
+      text-shadow: 1px 1px 2px var(--actFColor)
+    }
+.sort-nav-box > li.item-act:after {
+        content: "";
+        display: block;
+        width: 70%;
+        height: 2px;
+        background: var(--infoBgWite);
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: var(--borderRadius_2);
+      }
+
+
+/*# sourceMappingURL=src_pages_QuesBank_QuesBank_tsx.css.map*/

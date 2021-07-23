@@ -1,0 +1,131 @@
+.page-interview {
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.page-interview .exper-swiper {
+    position: relative
+  }
+.page-interview .exper-swiper .swiper-container {
+      padding-bottom: 30px;
+      margin-top: 40px
+    }
+.page-interview .exper-swiper .swiper-container .swiper-pagination-bullets {
+        bottom: 0px
+      }
+.page-interview .exper-swiper .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+          background: var(--fColor);
+          opacity: 1;
+          width: 10px;
+          height: 10px;
+          margin: 0 10px;
+        }
+.page-interview .exper-swiper .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
+          background: var(--actFColor);
+        }
+.page-interview .exper-swiper .swiper-container .swiper-slide {
+        width: 300px;
+        height: 400px;
+      }
+.page-interview .exper-swiper .swiper-item-box {
+      width: 300px;
+      height: 400px;
+      background: var(--infoBgWite);
+      box-sizing: border-box;
+      position: relative;
+      border-radius: var(--borderRadius_2);
+      overflow: hidden;
+      box-shadow: 0 8px 30px var(--shadowBlackColor);
+      cursor: pointer
+    }
+.page-interview .exper-swiper .swiper-item-box .item-top {
+        height: 160px;
+        overflow: hidden;
+        text-align: center
+      }
+.page-interview .exper-swiper .swiper-item-box .item-top img {
+          height: 100%;
+        }
+.page-interview .exper-swiper .swiper-item-box .user-avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 3;
+      }
+.page-interview .exper-swiper .swiper-item-box .item-content {
+        margin-top: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px
+      }
+.page-interview .exper-swiper .swiper-item-box .item-content .con-til {
+          color: var(--fBlack);
+          font-weight: bold;
+        }
+.page-interview .exper-swiper .swiper-item-box .item-content .user-info {
+          font-weight: bold;
+          margin-top: -8px;
+          /* margin-bottom: 20px; */
+        }
+.page-interview .exper-swiper .swiper-item-box .item-content .con-subject {
+          color: var(--infoFColor);
+          line-height: 1.5;
+          height: 80px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+/* @media (width>1200px) {
+  .gallery-box {
+    transform: scale(1.1);
+  }
+} */
+
+.modal {
+  width: 200px;
+  height: 38px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*# sourceMappingURL=src_pages_InterviewExper_interviewExper_tsx.css.map*/

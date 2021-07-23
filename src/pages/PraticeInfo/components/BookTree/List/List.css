@@ -1,0 +1,16 @@
+.list {
+  height: 100%;
+  box-sizing: border-box;
+  & .list-item {
+    /* height: 30px; */
+    padding: 0 5px;
+    line-height: 1.5;
+    color: var(--fColor);
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 12px 0;
+  }
+  & .focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

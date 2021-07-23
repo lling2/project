@@ -1,0 +1,150 @@
+.page-job {
+  height: 100%;
+  overflow: scroll;
+  scrollbar-color: linear-gradient(to bottom, #ff8a00, #da1b60);
+  scrollbar-width: 30px;
+  /* background: #100e17;
+  color: #fff; */
+  overflow-x: hidden
+}
+.page-job::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+.page-job::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff8a00, #da1b60);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    /* box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25); */
+  }
+.page-job::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to right,
+      #201c29,
+      #201c29 1px,
+      #100e17 1px,
+      #100e17
+    );
+  }
+.page-job .job-recommend {
+    box-sizing: border-box;
+    padding: 0 20px 10px 20px
+    /* & .reommend-til {
+    text-align: center;
+    margin-bottom: 30px;
+  } */
+  }
+.page-job .job-recommend .recommend-item-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px
+    }
+.page-job .job-recommend .recommend-item-box > i {
+        width: 260px;
+      }
+.page-job .job-recommend .recommend-item-box .tip-msg {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 100px;
+      }
+.page-job .job-recommend .recommend-item-box .recommend-item {
+        cursor: pointer;
+        width: 260px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-bottom: 20px;
+        transition: all 0.2s;
+        margin-left: 6px
+      }
+.page-job .job-recommend .recommend-item-box .recommend-item .user-avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 2px solid var(--borderColor);
+        }
+.page-job .job-recommend .recommend-item-box .recommend-item .item-content {
+          text-align: center;
+          box-sizing: border-box;
+          padding: 20px;
+          box-shadow: 0 0 20px var(--shadowBlackColor);
+          height: 280px;
+          overflow: hidden
+        }
+.page-job .job-recommend .recommend-item-box .recommend-item .item-content .con-til {
+            color: #abc0d0;
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px #abc0d0;
+          }
+.page-job .job-recommend .recommend-item-box .recommend-item .item-content .user-info {
+            font-weight: bold;
+            margin-top: -8px;
+            margin-bottom: 20px;
+            position: relative
+          }
+.page-job .job-recommend .recommend-item-box .recommend-item .item-content .user-info:after {
+              content: "";
+              display: block;
+              width: 36px;
+              height: 1px;
+              background-color: #3b3b3b;
+              margin: 16px auto;
+            }
+.page-job .job-recommend .recommend-item-box .recommend-item .item-content .con-subject {
+            color: var(--infoFColor);
+            line-height: 1.5;
+          }
+.page-job .job-recommend .recommend-item-box .recommend-item:hover {
+          transform: scale(0.96);
+          /* box-shadow: 0 0 20px var(--shadowBlackColor); */
+        }
+.page-job .job-recommend .loading-tip {
+      text-align: center;
+      color: var(--infoFColor);
+    }
+
+.modal {
+  width: 200px;
+  height: 38px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*# sourceMappingURL=src_pages_JobRecommend_jobRecommend_tsx.css.map*/
